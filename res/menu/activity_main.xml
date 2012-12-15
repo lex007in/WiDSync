@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/act_add_folder"
+        android:title="@string/btn_add_folder"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/start_srv" android:title="@string/start_srv_txt" android:orderInCategory="200" android:showAsAction="ifRoom|withText"></item>
+</menu>
