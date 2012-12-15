@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <EditText
+        android:id="@+id/folderIdInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/folder_id_txt" >
+        <requestFocus />
+    </EditText>    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/choose_dialog_btn"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/choose_folder" />
+        <EditText
+            android:id="@+id/folderPathInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/choose_dialog_btn"
+            android:ems="10"
+            android:hint="@string/folder_path_txt" />
+    </RelativeLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	    <RadioButton
+	        android:id="@+id/radioButtonSrc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true"
+	        android:text="@string/source_folder" />
+	    <RadioButton
+	        android:id="@+id/radioButtonDst"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/destination_folder" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/editOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/edit_ok" />
+</LinearLayout>
